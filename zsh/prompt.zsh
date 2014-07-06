@@ -21,8 +21,8 @@ autoload -U colors && colors # Enable colors in prompt
 
 # Modify the colors and symbols in these variables as desired.
 GIT_PROMPT_SYMBOL=" ±"
-GIT_PROMPT_PREFIX="${GRAY}[%{$reset_color%}"
-GIT_PROMPT_SUFFIX="${GRAY}]%{$reset_color%}"
+GIT_PROMPT_PREFIX="${BASE01}[%{$reset_color%}"
+GIT_PROMPT_SUFFIX="${BASE01}]%{$reset_color%}"
 GIT_PROMPT_AHEAD="${BLUE}↑NUM%{$reset_color%} "
 GIT_PROMPT_BEHIND="${BLUE}↓NUM%{$reset_color%} "
 GIT_PROMPT_MERGING="${YELLOW}⚡︎%{$reset_color%} "

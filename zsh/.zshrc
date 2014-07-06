@@ -3,9 +3,9 @@ find ~/Code/dotfiles/ -name aliases.zsh | while read INSTALL ; do source "${INST
 
 source ~/Code/dotfiles/zsh/colors.zsh
 source ~/Code/dotfiles/zsh/setopt.zsh
-# source ~/.zsh/exports.zsh
+source ~/Code/dotfiles/zsh/exports.zsh
 source ~/Code/dotfiles/zsh/prompt.zsh
-# source ~/.zsh/completion.zsh
+source ~/Code/dotfiles/zsh/completion.zsh
 # source ~/.zsh/aliases.zsh
 # source ~/.zsh/bindkeys.zsh
 # source ~/.zsh/functions.zsh

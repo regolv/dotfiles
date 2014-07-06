@@ -1,11 +1,11 @@
 autoload colors; colors
 
-GRAY="%{%F{8}%}"
+BG="%{%F{8}%}"
 INVISIBLE="%{%F{0}%}"
 BASE01="%{%F{10}%}"
 BASE00="%{%F{11}%}"
 BASE0="%{%F{12}%}"
-BASE1="%{%F{14}%}"
+GRAY="%{%F{14}%}"
 WHITE="%{%F{7}%}"
 LIGHT="%{%F{15}%}"
 YELLOW="%{%F{3}%}"
