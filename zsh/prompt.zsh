@@ -23,12 +23,12 @@ autoload -U colors && colors # Enable colors in prompt
 GIT_PROMPT_SYMBOL=" ±"
 GIT_PROMPT_PREFIX="${GRAY}[%{$reset_color%}"
 GIT_PROMPT_SUFFIX="${GRAY}]%{$reset_color%}"
-GIT_PROMPT_AHEAD="${BLUE}↑ANUM%{$reset_color%}"
-GIT_PROMPT_BEHIND="${BLUE}↓BNUM%{$reset_color%}"
-GIT_PROMPT_MERGING="${YELLOW}⚡︎%{$reset_color%}"
-GIT_PROMPT_UNTRACKED="${RED}U%{$reset_color%}"
-GIT_PROMPT_MODIFIED="${RED}M%{$reset_color%}"
-GIT_PROMPT_STAGED="${WHITE}S%{$reset_color%}"
+GIT_PROMPT_AHEAD="${BLUE}↑NUM%{$reset_color%} "
+GIT_PROMPT_BEHIND="${BLUE}↓NUM%{$reset_color%} "
+GIT_PROMPT_MERGING="${YELLOW}⚡︎%{$reset_color%} "
+GIT_PROMPT_UNTRACKED="${RED}U%{$reset_color%} "
+GIT_PROMPT_MODIFIED="${RED}M%{$reset_color%} "
+GIT_PROMPT_STAGED="${GRAY}S%{$reset_color%} "
  
 # Show Git branch/tag, or name-rev if on detached head
 function parse_git_branch() {
@@ -40,21 +40,6 @@ function parse_git_state() {
  
   # Compose this value via multiple conditional appends.
   local GIT_STATE=""
- 
-  local NUM_AHEAD="$(git log --oneline @{u}.. 2> /dev/null | wc -l | tr -d ' ')"
-  if [ "$NUM_AHEAD" -gt 0 ]; then
-    GIT_STATE=$GIT_STATE${GIT_PROMPT_AHEAD//NUM/$NUM_AHEAD}
-  fi
- 
-  local NUM_BEHIND="$(git log --oneline ..@{u} 2> /dev/null | wc -l | tr -d ' ')"
-  if [ "$NUM_BEHIND" -gt 0 ]; then
-    GIT_STATE=$GIT_STATE${GIT_PROMPT_BEHIND//NUM/$NUM_BEHIND}
-  fi
- 
-  local GIT_DIR="$(git rev-parse --git-dir 2> /dev/null)"
-  if [ -n $GIT_DIR ] && test -r $GIT_DIR/MERGE_HEAD; then
-    GIT_STATE=$GIT_STATE$GIT_PROMPT_MERGING
-  fi
  
   if [[ -n $(git ls-files --other --exclude-standard 2> /dev/null) ]]; then
     GIT_STATE=$GIT_STATE$GIT_PROMPT_UNTRACKED
@@ -68,6 +53,21 @@ function parse_git_state() {
     GIT_STATE=$GIT_STATE$GIT_PROMPT_STAGED
   fi
  
+  local GIT_DIR="$(git rev-parse --git-dir 2> /dev/null)"
+  if [ -n $GIT_DIR ] && test -r $GIT_DIR/MERGE_HEAD; then
+    GIT_STATE=$GIT_STATE$GIT_PROMPT_MERGING
+  fi
+ 
+  local NUM_AHEAD="$(git log --oneline @{u}.. 2> /dev/null | wc -l | tr -d ' ')"
+  if [ "$NUM_AHEAD" -gt 0 ]; then
+    GIT_STATE=$GIT_STATE${GIT_PROMPT_AHEAD//NUM/$NUM_AHEAD}
+  fi
+ 
+  local NUM_BEHIND="$(git log --oneline ..@{u} 2> /dev/null | wc -l | tr -d ' ')"
+  if [ "$NUM_BEHIND" -gt 0 ]; then
+    GIT_STATE=$GIT_STATE${GIT_PROMPT_BEHIND//NUM/$NUM_BEHIND}
+  fi
+ 
   if [[ -n $GIT_STATE ]]; then
     echo "$GIT_STATE"
   fi
@@ -78,7 +78,7 @@ function parse_git_state() {
 # If inside a Git repository, print its branch and state
 function git_prompt_string() {
   local git_where="$(parse_git_branch)"
-  [ -n "$git_where" ] && echo "$(parse_git_state) ${GIT_PROMPT_PREFIX}${WHITE}${git_where#(refs/heads/|tags/)}%{$reset_color%}${GIT_PROMPT_SUFFIX}%{$reset_color%}"
+  [ -n "$git_where" ] && echo "$(parse_git_state)${GIT_PROMPT_PREFIX}${WHITE}${git_where#(refs/heads/|tags/)}%{$reset_color%}${GIT_PROMPT_SUFFIX}%{$reset_color%}"
 }
 chpwd_functions+=(_update_ruby_version)
 
