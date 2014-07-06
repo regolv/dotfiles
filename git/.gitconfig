@@ -1,3 +1,5 @@
 [user]
     email = roberts@rego.lv
     name = Roberts Gulans
+[push]
+	default = simple
