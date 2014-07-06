@@ -6,8 +6,7 @@ source ~/Code/dotfiles/zsh/setopt.zsh
 source ~/Code/dotfiles/zsh/exports.zsh
 source ~/Code/dotfiles/zsh/prompt.zsh
 source ~/Code/dotfiles/zsh/completion.zsh
-# source ~/.zsh/aliases.zsh
-# source ~/.zsh/bindkeys.zsh
-# source ~/.zsh/functions.zsh
-# source ~/.zsh/history.zsh
-# source ~/.zsh/zsh_hooks.zsh
+source ~/Code/dotfiles/zsh/bindkeys.zsh
+source ~/Code/dotfiles/zsh/functions.zsh
+source ~/Code/dotfiles/zsh/history.zsh
+source ~/Code/dotfiles/zsh/hooks.zsh
