@@ -1,0 +1,20 @@
+#! /usr/bin/env zsh
+
+ROOT="`pwd`"
+
+# Symlinking
+declare -A SYMLINKS
+SYMLINKS[zsh/.zshrc]='~/.zshrc'
+SYMLINKS[git/.gitconfig]='~/.gitconfig'
+SYMLINKS[git/.gitignore]='~/.gitignore'
+
+# SYMLINKS[vim/.vimrc]='~/.vimrc'
+
+for LOCAL in "${(@k)SYMLINKS}" ; do
+
+    REMOTE=$SYMLINKS[$LOCAL]
+    REMOTE=${REMOTE//'~'/$HOME}
+    LOCAL="$ROOT/$LOCAL"
+    
+    ln -s $LOCAL $REMOTE
+done

@@ -1,0 +1,21 @@
+#! /usr/bin/env zsh
+
+# Make sure that is executed as sudo
+sudo -v
+while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+
+# Install homebrew
+ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+
+# Prepare brew
+brew tap caskroom/cask
+brew tap caskroom/versions
+
+# Install brew stuff
+brew install brew-cask
+
+# install everything
+find . -name install.zsh | while read INSTALL ; do sh -c "${INSTALL}" ; done
+
+# Cleanup
+brew cleanup
