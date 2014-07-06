@@ -11,6 +11,7 @@ brew cask install --appdir="/Applications" sequel-pro
 
 brew cask install --appdir="/Applications" phpstorm-eap
 brew cask install --appdir="/Applications" sublime-text3
+brew cask install --appdir="/Applications" macvim
 
 brew cask install --appdir="/Applications" firefox
 brew cask install --appdir="/Applications" google-chrome
