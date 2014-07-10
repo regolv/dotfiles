@@ -1,0 +1,220 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "apps/install.zsh",
+			"settings":
+			{
+				"buffer_size": 801,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/roberts/Code/dotfiles/zsh/.zshrc",
+		"/Users/roberts/Code/dotfiles/zsh/prompt.zsh",
+		"/Users/roberts/Code/dotfiles/zsh/colors.zsh",
+		"/Users/roberts/Code/dotfiles/zsh/exports.zsh",
+		"/Users/roberts/Code/dotfiles/zsh/completion.zsh",
+		"/Users/roberts/Code/dotfiles/setup/sync",
+		"/Users/roberts/Code/dotfiles/setup/bootstrap",
+		"/Users/roberts/Code/dotfiles/zsh/hoohks.zsh",
+		"/Users/roberts/Code/dotfiles/zsh/aliases.zsh",
+		"/Users/roberts/Code/dotfiles/osx/aliases.zsh",
+		"/Users/roberts/Code/dotfiles/git/aliases.zsh",
+		"/Users/roberts/Code/dotfiles/zsh/bindkeys.zsh",
+		"/Users/roberts/Code/dotfiles/zsh/functions.zsh",
+		"/Users/roberts/Code/dotfiles/zsh/history.zsh",
+		"/Users/roberts/Code/dotfiles/zsh/setopt.zsh",
+		"/Users/roberts/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/roberts/Code/dotfiles/apps/install.zsh",
+		"/Users/roberts/Code/dotfiles/dev/install.zsh",
+		"/Users/roberts/Code/dotfiles/osx/install.zsh",
+		"/Users/roberts/Code/dotfiles/git/.gitconfig",
+		"/Users/roberts/Code/dotfiles/git/.gitignore",
+		"/Users/roberts/Code/dotfiles/git/install.zsh",
+		"/Users/roberts/Code/dotfiles/zsh/install.zsh",
+		"/Users/roberts/Code/dotfiles/setup/setup",
+		"/Users/roberts/Code/dotfiles/apps.zsh",
+		"/Users/roberts/Code/dotfiles/setup2"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"gitconfig",
+			"/Applications",
+			"install"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "apps/install.zsh",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 801,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								801,
+								801
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "dotfiles.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
