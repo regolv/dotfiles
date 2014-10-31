@@ -11,7 +11,6 @@ brew cask install --appdir="/Applications" sequel-pro
 
 brew cask install --appdir="/Applications" phpstorm-eap
 brew cask install --appdir="/Applications" sublime-text3
-brew cask install --appdir="/Applications" macvim
 
 brew cask install --appdir="/Applications" firefox
 brew cask install --appdir="/Applications" google-chrome
@@ -20,3 +19,7 @@ brew cask install --appdir="/Applications" skype
 brew cask install --appdir="/Applications" spectacle
 brew cask install --appdir="/Applications" the-unarchiver
 brew cask install --appdir="/Applications" vlc
+brew cask install --appdir="/Applications" dropbox
+brew cask install --appdir="/Applications" transmit
+
+brew install mackup

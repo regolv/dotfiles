@@ -18,4 +18,5 @@ brew install brew-cask
 find . -name install.zsh | while read INSTALL ; do sudo sh -c "${INSTALL}" ; done
 
 # Cleanup
-brew cleanup
+brew cleanup --force
+rm -f -r /Library/Caches/Homebrew/*
