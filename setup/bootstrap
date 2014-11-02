@@ -18,7 +18,9 @@ brew install brew-cask
 # install everything
 find . -name install.sh | while read INSTALL ; do sudo sh -c "${INSTALL}" ; done
 
+# restore settings
 brew install mackup
+mackup restore
 
 # Cleanup
 brew cleanup --force
