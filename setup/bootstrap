@@ -16,7 +16,7 @@ brew tap caskroom/versions
 brew install brew-cask
 
 # install everything
-find . -name install.zsh | while read INSTALL ; do sudo sh -c "${INSTALL}" ; done
+find . -name install.sh | while read INSTALL ; do sudo sh -c "${INSTALL}" ; done
 
 # Cleanup
 brew cleanup --force
