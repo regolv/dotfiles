@@ -18,6 +18,8 @@ brew install brew-cask
 # install everything
 find . -name install.sh | while read INSTALL ; do sudo sh -c "${INSTALL}" ; done
 
+brew install mackup
+
 # Cleanup
 brew cleanup --force
 rm -f -r /Library/Caches/Homebrew/*
