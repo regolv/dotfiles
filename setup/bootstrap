@@ -24,4 +24,4 @@ mackup restore
 
 # Cleanup
 brew cleanup --force
-rm -f -r /Library/Caches/Homebrew/*
+sudo rm -f -r /Library/Caches/Homebrew/*
