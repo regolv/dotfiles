@@ -12,3 +12,7 @@ cat > /etc/apache2/other/homestead.conf <<EOL
     ProxyPassReverse / http://localhost:8000/
 </VirtualHost>
 EOL
+
+# Set up Homestead
+vagrant box add laravel/homestead
+git clone https://github.com/laravel/homestead.git ~/Homestead
